@@ -6,8 +6,8 @@ use App\Filament\Resources\Kategoris\KategoriResource;
 use Filament\Actions\EditAction;
 use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Pages\ViewRecord;
+use Filament\Schemas\Schema;
 
 class ViewKategori extends ViewRecord
 {
@@ -20,10 +20,10 @@ class ViewKategori extends ViewRecord
         ];
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $schema): Schema
     {
-        return $infolist
-            ->schema([
+        return $schema
+            ->components([
                 Section::make('Identitas Kategori')
                     ->columns(2)
                     ->schema([
