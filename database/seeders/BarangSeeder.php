@@ -19,6 +19,7 @@ class BarangSeeder extends Seeder
         $barangs = [
             // Normal Stock
             [
+                'kode_barang' => 'BRG-001',
                 'nama_barang' => 'Fiesta Chicken Nugget',
                 'kategori_id' => $kategoriAyam,
                 'satuan' => 'pack',
@@ -31,6 +32,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Chicken nugget kualitas premium dari Fiesta.',
             ],
             [
+                'kode_barang' => 'BRG-002',
                 'nama_barang' => 'So Good Spicy Chicken',
                 'kategori_id' => $kategoriAyam,
                 'satuan' => 'pack',
@@ -43,6 +45,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Olahan ayam pedas.',
             ],
             [
+                'kode_barang' => 'BRG-003',
                 'nama_barang' => 'Bakso Sapi Sumber Selera',
                 'kategori_id' => $kategoriSapi,
                 'satuan' => 'pack',
@@ -55,6 +58,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Bakso sapi asli isi 50.',
             ],
             [
+                'kode_barang' => 'BRG-004',
                 'nama_barang' => 'Edamame Beku',
                 'kategori_id' => $kategoriSayuran,
                 'satuan' => 'pack',
@@ -68,6 +72,7 @@ class BarangSeeder extends Seeder
             ],
             // Low Stock (< 20)
             [
+                'kode_barang' => 'BRG-005',
                 'nama_barang' => 'Kanzler Sosis Beef Cocktail',
                 'kategori_id' => $kategoriSapi,
                 'satuan' => 'pack',
@@ -80,6 +85,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Sosis sapi cocktail premium.',
             ],
             [
+                'kode_barang' => 'BRG-006',
                 'nama_barang' => 'Cedea Fish Dumpling Cheese',
                 'kategori_id' => $kategoriSeafood,
                 'satuan' => 'pack',
@@ -92,6 +98,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Dumpling ikan isi keju lumer.',
             ],
             [
+                'kode_barang' => 'BRG-007',
                 'nama_barang' => 'Dimsum Ayam',
                 'kategori_id' => $kategoriSiapSaji,
                 'satuan' => 'mika',
@@ -105,6 +112,7 @@ class BarangSeeder extends Seeder
             ],
             // Out of Stock (0)
             [
+                'kode_barang' => 'BRG-008',
                 'nama_barang' => 'Udang Kupas Beku',
                 'kategori_id' => $kategoriSeafood,
                 'satuan' => 'pack',
@@ -117,6 +125,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Udang kupas sisa ekor.',
             ],
             [
+                'kode_barang' => 'BRG-009',
                 'nama_barang' => 'Belfoods Kentang Goreng',
                 'kategori_id' => $kategoriSayuran,
                 'satuan' => 'pack',
@@ -129,6 +138,7 @@ class BarangSeeder extends Seeder
                 'deskripsi' => 'Kentang goreng shoestring.',
             ],
             [
+                'kode_barang' => 'BRG-010',
                 'nama_barang' => 'Kebab Daging Sapi Mini',
                 'kategori_id' => $kategoriSiapSaji,
                 'satuan' => 'box',

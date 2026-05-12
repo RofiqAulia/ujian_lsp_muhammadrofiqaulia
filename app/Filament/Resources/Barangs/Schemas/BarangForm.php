@@ -15,6 +15,12 @@ class BarangForm
                 \Filament\Schemas\Components\Section::make()
                     ->columns(2)
                     ->schema([
+                        TextInput::make('kode_barang')
+                            ->label('Kode Barang')
+                            ->required()
+                            ->unique(ignoreRecord: true)
+                            ->maxLength(50)
+                            ->placeholder('Contoh: BRG-001'),
                         TextInput::make('nama_barang')
                             ->required()
                             ->maxLength(255),

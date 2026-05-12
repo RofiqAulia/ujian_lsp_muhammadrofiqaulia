@@ -19,6 +19,12 @@ class BarangsTable
             ->columns([
                 \Filament\Tables\Columns\ImageColumn::make('foto')
                     ->circular(),
+                TextColumn::make('kode_barang')
+                    ->label('Kode')
+                    ->searchable()
+                    ->sortable()
+                    ->badge()
+                    ->color('warning'),
                 TextColumn::make('nama_barang')
                     ->searchable(),
                 TextColumn::make('kategori.nama_kategori')

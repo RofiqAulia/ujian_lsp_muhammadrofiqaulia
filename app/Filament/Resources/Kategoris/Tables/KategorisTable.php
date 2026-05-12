@@ -17,6 +17,12 @@ class KategorisTable
     {
         return $table
             ->columns([
+                TextColumn::make('kode_kategori')
+                    ->label('Kode')
+                    ->searchable()
+                    ->sortable()
+                    ->badge()
+                    ->color('info'),
                 TextColumn::make('nama_kategori')
                     ->searchable()
                     ->sortable(),
