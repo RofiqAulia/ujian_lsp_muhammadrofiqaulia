@@ -32,6 +32,11 @@ class DaftarBarangWidget extends BaseWidget
             Section::make()
                 ->columns(2)
                 ->schema([
+                    TextInput::make('kode_barang')
+                        ->label('Kode Barang')
+                        ->required()
+                        ->maxLength(50)
+                        ->placeholder('Contoh: BRG-001'),
                     TextInput::make('nama_barang')
                         ->required()
                         ->maxLength(255),
