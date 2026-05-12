@@ -15,7 +15,6 @@ class KategoriForm
                 TextInput::make('kode_kategori')
                     ->label('Kode Kategori')
                     ->required()
-                    ->unique(table: 'kategoris', column: 'kode_kategori', ignoreRecord: true)
                     ->maxLength(50)
                     ->placeholder('Contoh: KAT-001'),
                 TextInput::make('nama_kategori')

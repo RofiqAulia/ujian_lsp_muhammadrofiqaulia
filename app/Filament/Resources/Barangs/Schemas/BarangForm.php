@@ -18,10 +18,8 @@ class BarangForm
                         TextInput::make('kode_barang')
                             ->label('Kode Barang')
                             ->required()
-                            ->unique(table: 'barangs', column: 'kode_barang', ignoreRecord: true)
                             ->maxLength(50)
-                            ->placeholder('Contoh: BRG-001')
-                            ->columnSpan(1),
+                            ->placeholder('Contoh: BRG-001'),
                         TextInput::make('nama_barang')
                             ->required()
                             ->maxLength(255),
