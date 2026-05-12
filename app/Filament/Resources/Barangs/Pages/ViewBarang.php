@@ -5,9 +5,9 @@ namespace App\Filament\Resources\Barangs\Pages;
 use App\Filament\Resources\Barangs\BarangResource;
 use Filament\Actions\EditAction;
 use Filament\Infolists\Components\ImageEntry;
-use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Resources\Pages\ViewRecord;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
 class ViewBarang extends ViewRecord
